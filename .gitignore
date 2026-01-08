@@ -1,23 +1,76 @@
-# This file is used for Git repositories to specify intentionally untracked files that Git should ignore. 
-# If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
-# For useful gitignore templates see: https://github.com/github/gitignore
-
-# Salesforce cache
+# Salesforce DX
 .sfdx/
+.sf/
 .localdevserver/
+.vscode/
+config/.env
 
-# LWC VSCode autocomplete
-**/lwc/jsconfig.json
-
-# LWC Jest coverage reports
-coverage/
+# LWC Jest
+**/__tests__/**
+**/*.test.js
 
 # Logs
-logs
 *.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Apex
+**/*.apex-meta.xml~
+
+# Compiled files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE
+*.iml
+*.ipr
+*.iws
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Backup files
+*~
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Build artifacts
+.testresults/
+IlluminatedCloud/
+mdapioutput/
+
+# Environment variables
+.env
+.env.local
 
 # Dependency directories
 node_modules/
@@ -25,13 +78,5 @@ node_modules/
 # Eslint cache
 .eslintcache
 
-# MacOS system files
-.DS_Store
-
-# Windows system files
-Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
-
-/docs/
+# Documentation
+/docs
