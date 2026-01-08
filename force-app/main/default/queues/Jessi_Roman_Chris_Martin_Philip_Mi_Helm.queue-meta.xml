@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Jessi_Roman_Chris_Martin_Philip_Mi_Helm</name>
+    <queueMembers>
+        <roles>
+            <role>Sales_Manager</role>
+        </roles>
+        <users>
+            <user>christoph.monschein@edenred.com</user>
+            <user>helmut.otto@edenred.com</user>
+            <user>jessica.keck@edenred.com</user>
+            <user>michael.breit@edenred.com</user>
+            <user>philip.pree@edenred.com</user>
+            <user>roman.kremsl@edenred.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

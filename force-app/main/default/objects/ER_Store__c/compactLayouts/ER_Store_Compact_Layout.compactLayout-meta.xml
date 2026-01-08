@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ER_Store_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Zip_Code__c</fields>
+    <fields>ER_Street__c</fields>
+    <fields>ER_City__c</fields>
+    <fields>ER_Merchant__c</fields>
+    <label>Store Compact Layout</label>
+</CompactLayout>

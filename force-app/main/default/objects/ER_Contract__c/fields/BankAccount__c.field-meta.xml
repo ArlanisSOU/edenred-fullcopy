@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BankAccount__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Bank Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>This bank account does not belong to the merchant.</errorMessage>
+        <filterItems>
+            <field>ER_Bank_Account__c.ER_Client_Merchant__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.Account_Name__c</valueField>
+        </filterItems>
+        <infoMessage>Please enter a valid bank account for this contract.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ER_Bank_Account__c</referenceTo>
+    <relationshipLabel>Contracts (Edenred)</relationshipLabel>
+    <relationshipName>Contracts_Edenred</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

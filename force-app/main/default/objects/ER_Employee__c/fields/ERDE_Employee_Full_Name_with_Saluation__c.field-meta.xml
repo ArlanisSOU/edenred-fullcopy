@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERDE_Employee_Full_Name_with_Saluation__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT( ER_Salutation__c ) &amp; &quot; &quot;&amp; Name</formula>
+    <label>Employee Full Name with Saluation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ER_Employees</fullName>
+    <fields>ERDE_Employee_Full_Name_with_Saluation__c</fields>
+    <fields>ER_Employee_Number__c</fields>
+    <fields>ER_Card_Operational_System_ID__c</fields>
+    <fields>ER_Client__c</fields>
+    <label>Employees</label>
+</CompactLayout>

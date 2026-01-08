@@ -1,0 +1,60 @@
+<aura:component controller="LNAT01_StoreManager"  implements="force:lightningQuickAction,force:hasRecordId" >
+    <aura:attribute name="counters" type="String[]"/>
+    
+    <!-- include custom CSS -->
+	<ltng:require styles="{!$Resource.popupCSS}" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="slds-page-header" role="banner">
+        <h1 class="slds-page-header__title slds-m-right_small slds-truncate slds-align-left">You are going to DELETE DATA - this operation can't be reverted!</h1>
+    </div>
+
+	<br></br>    
+    
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3 slds-align-bottom">
+            <lightning:input aura:id="txtStrName" name="storeQty" label="Number of Stores" disabled="true" value="{!v.counters[0]}"/>
+        </div>
+        <div class="slds-col slds-size_1-of-3 slds-align-bottom">
+            <lightning:input aura:id="txtStrName" name="storeQty" label="Number of Store Authorizations" disabled="true" value="{!v.counters[2]}"/>
+        </div>  
+        <div class="slds-col slds-size_1-of-3 slds-align-bottom">
+            <lightning:input aura:id="txtStrName" name="storeQty" label="Number of Acceptors" disabled="true" value="{!v.counters[1]}"/>
+        </div>
+    </div>
+    
+    <br></br>
+    
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3 ">
+                    <lightning:button aura:id="deleteDataButton"
+                      label="Delete ALL (Stores &amp; Acceptors)"
+                      class="slds-button slds-button__icon_left slds-button_destructive slds-button-fullwidth"
+                      onclick="{!c.cleanStoresAcceptorsStoreAuth}" 
+                      iconName="utility:delete"
+                      />
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+                        <lightning:button aura:id="deleteDataButton"
+                              label="Delete StoreAuth. Only"
+                              class="slds-button slds-button__icon_left slds-button_destructive slds-button-fullwidth"
+                              onclick="{!c.cleanStoreAuthorizations}" 
+                              iconName="utility:delete"
+                              /> 
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+                       <lightning:button aura:id="deleteDataButton"
+                              label="Delete Acceptors Only"
+                              class="slds-button slds-button__icon_left slds-button_destructive slds-button-fullwidth"
+                              onclick="{!c.cleanAcceptors}" 
+                              iconName="utility:delete"
+                              />
+        </div>  
+    </div>
+
+    
+
+   
+	<!-- <lightning:button label="Cancel and Close" onclick="{!c.closePopUp}" class="slds-m-top_medium" /> -->
+</aura:component>

@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ArlCaseMarkAllEmailsRead</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ArlCaseMarkAllEmailsRead</shortDescription>
+        <value>Mark All Emails As Read</value>
+    </labels>
+    <labels>
+        <fullName>AssignBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignBtn</shortDescription>
+        <value>Assign</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessSummary</shortDescription>
+        <value>The opportunities you selected and their attached open activities have successfully been reassigned.</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessTitle</shortDescription>
+        <value>Reassignment successfully completed!</value>
+    </labels>
+    <labels>
+        <fullName>AssignToBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignToBtn</shortDescription>
+        <value>Assign to:</value>
+    </labels>
+    <labels>
+        <fullName>AssigningBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssigningBtn</shortDescription>
+        <value>In progress ...</value>
+    </labels>
+    <labels>
+        <fullName>CloseDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CloseDateCriteriaLabel</shortDescription>
+        <value>Closed Date</value>
+    </labels>
+    <labels>
+        <fullName>CriteriaSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CriteriaSearchSection</shortDescription>
+        <value>Search with a search criteria</value>
+    </labels>
+    <labels>
+        <fullName>DisplayViewLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DisplayViewLabel</shortDescription>
+        <value>Display:</value>
+    </labels>
+    <labels>
+        <fullName>HeaderText</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HeaderText</shortDescription>
+        <value>Mass reassign opportunities</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Asset_Transaction_Clear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LABS_SF_Asset_Transaction_Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Beneficiary_Webservice_Setting_Environnement</fullName>
+        <categories>Setting,Webservice</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LABS_SF_Beneficiary_Webservice_Setting_Environnement</shortDescription>
+        <value>Sandbox</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_WS_GenericError1</fullName>
+        <categories>Webservice</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LABS_SF_WS_GenericError1</shortDescription>
+        <value>An error occured processing your request, please try again later</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_WS_SettingNotFilled</fullName>
+        <categories>Setting,Webservice</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LABS_SF_WS_SettingNotFilled</shortDescription>
+        <value>Webservice informations were not completed. Please contact your administrator for further assistance.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_WS_Unavailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LABS_SF_WS_Unavailable</shortDescription>
+        <value>Server is temporarily unavailable, please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_Balance</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_Balance</shortDescription>
+        <value>Balance</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_BalanceAvailable</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_BalanceAvailable</shortDescription>
+        <value>Balance Available</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_BlockCardButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_BlockCardButton</shortDescription>
+        <value>Block Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_BlockCardSection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_BlockCardSection</shortDescription>
+        <value>Block Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_CaseManagementSection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_CaseManagementSection</shortDescription>
+        <value>Case Management</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_GetBalance</fullName>
+        <categories>VFP001</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_GetBalance</shortDescription>
+        <value>Get Balance</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_GetCardButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_GetCardButton</shortDescription>
+        <value>Get Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_GetMore</fullName>
+        <categories>VFP001</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_GetMore</shortDescription>
+        <value>Get More</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_GetPinButton</fullName>
+        <categories>Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_GetPinButton</shortDescription>
+        <value>Get Pin</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_GetTransactions</fullName>
+        <categories>VFP001</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_GetTransactions</shortDescription>
+        <value>Get Transactions</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_LinkCaseButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_LinkCaseButton</shortDescription>
+        <value>Link Case</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_NewCaseButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_NewCaseButton</shortDescription>
+        <value>New Case</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_PIN_PinResetButton</fullName>
+        <categories>Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_PIN_PinResetButton</shortDescription>
+        <value>PIN Reset</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_PIN_ResetSection</fullName>
+        <categories>Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_PIN ResetSection</shortDescription>
+        <value>PIN Reset</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_PendingDebit</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_PendingDebit</shortDescription>
+        <value>Pending Debit</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_Status</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_Status_Active</fullName>
+        <categories>Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_Status_Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_Temp_Blocked</fullName>
+        <categories>Assets</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_Temp_Blocked</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_TransactionSection</fullName>
+        <categories>VFP001</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_TransactionSection</shortDescription>
+        <value>Transaction History</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_Type</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_Type</shortDescription>
+        <value>ER_Mono-Wallet</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_UnblockCardButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_UnblockCardButton</shortDescription>
+        <value>Unblock Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_UnblockCardSection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_UnblockCardSection</shortDescription>
+        <value>Unblock Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_VerifyIdentitySection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_VerifyIdentitySection</shortDescription>
+        <value>Please verify cardholder identity and card information</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionAcceptorName</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionAcceptorName</shortDescription>
+        <value>Acceptor Name</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionAmount</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionAmount</shortDescription>
+        <value>Amount</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionDate</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionDate</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionFailed</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionFailed</shortDescription>
+        <value>failed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionStatus</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionStatus</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionStatusDetail</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionStatusDetail</shortDescription>
+        <value>Status Detail</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_ASSET_transactionType</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_ASSET_transactionType</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Asset_BlockCard_wsSuccessText</fullName>
+        <categories>Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Asset_BlockCard_wsSuccessText</shortDescription>
+        <value>card successfully blocked</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Asset_Blocked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Asset_Blocked</shortDescription>
+        <value>Blocked</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Asset_UnblockCard_wsSuccessText</fullName>
+        <categories>Assets</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Asset_UnblockCard_wsSuccessText</shortDescription>
+        <value>card successfully unblocked</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_AcceptCaseAlert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_AcceptCaseAlert</shortDescription>
+        <value>You must select at least one Case</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Block</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Block</shortDescription>
+        <value>Temporary Block</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Card</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Card</shortDescription>
+        <value>Card</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Offen</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Offen</shortDescription>
+        <value>Offen</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_PinReset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_PinReset</shortDescription>
+        <value>PIN: forgotten, reset</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Reason_Block</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Reason_Block</shortDescription>
+        <value>Card replacement</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Reason_PinReset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Reason_PinReset</shortDescription>
+        <value>Usage of cards</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Reason_Unblock</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Reason_Unblock</shortDescription>
+        <value>Card replacement</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_Unblock</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_Unblock</shortDescription>
+        <value>Unblock</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_feedbackSent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_feedbackSent</shortDescription>
+        <value>Feedback Sent</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_inProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_inProgress</shortDescription>
+        <value>In progress</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Case_resolved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Case_resolved</shortDescription>
+        <value>Resolved</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_None</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_BlockCardFailed</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_BlockCardFailed</shortDescription>
+        <value>Block Card Failed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_BlockCardSuccess</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_BlockCardSuccess</shortDescription>
+        <value>Block Card Success</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_GetSpecificCardFailed</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_GetSpecificCardFailed</shortDescription>
+        <value>Get specific card Failed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_GetSpecificCardSuccess</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_GetSpecificCardSuccess</shortDescription>
+        <value>Get specific card Success</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_PinResetFailed</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_PinResetFailed</shortDescription>
+        <value>Pin Reset Failed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_PinResetSuccess</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_PinResetSuccess</shortDescription>
+        <value>Pin Reset Success</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_StatusCompleted</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_StatusCompleted</shortDescription>
+        <value>Completed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_UnblockCardFailed</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_UnblockCardFailed</shortDescription>
+        <value>Unblock Card Failed</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_Task_UnblockCardSuccess</fullName>
+        <categories>Task</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_Task_UnblockCardSuccess</shortDescription>
+        <value>Unblock Card Success</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_All</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_All</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_First</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_First</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Last</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Last</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Length</fullName>
+        <categories>VFP001</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Length</shortDescription>
+        <value>15</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Next</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Previous</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Search</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Search</shortDescription>
+        <value>Search:</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_Show</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_Show</shortDescription>
+        <value>Show _MENU_ transactions</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_info</fullName>
+        <categories>datatable</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_info</shortDescription>
+        <value>Showing _START_ to _END_ of _TOTAL_ transactions</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_infoEmpty</fullName>
+        <categories>datatable</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_infoEmpty</shortDescription>
+        <value>Showing 0 to 0 of 0 transactions</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_infoFiltered</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_infoFiltered</shortDescription>
+        <value>(filtered from _MAX_ total transactions)</value>
+    </labels>
+    <labels>
+        <fullName>LAB_SF_datatable_zeroRecords</fullName>
+        <categories>VFP001,Asset</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LAB_SF_datatable_zeroRecords</shortDescription>
+        <value>No transactions found</value>
+    </labels>
+    <labels>
+        <fullName>LEXAccSectionAdditionalInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAccSectionAdditionalInformation</shortDescription>
+        <value>Additional Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAccSectionMarketingInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAccSectionMarketingInformation</shortDescription>
+        <value>Marketing Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAccSectionPortalInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAccSectionPortalInformation</shortDescription>
+        <value>Portal Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAccountSectionAccountInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAccSectionAccountInformation</shortDescription>
+        <value>Account Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAssSectionAssetInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAssSectionAssetInformation</shortDescription>
+        <value>Asset Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAssSectionCardInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAssSectionCardInformation</shortDescription>
+        <value>Card Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXAssSectionOrderInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXAssSectionOrderInformation</shortDescription>
+        <value>Order Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionCaseDetail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionCaseDetail</shortDescription>
+        <value>Case Detail</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionCaseInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionCaseInformation</shortDescription>
+        <value>Case Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionClientMerchantDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionClientMerchantDetails</shortDescription>
+        <value>Client / Merchant Details</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionRequesterAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionRequesterAddress</shortDescription>
+        <value>Requester Detail (from Web Form)</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionRequesterDetail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionRequesterDetail</shortDescription>
+        <value>Requester Detail (from Web Form)</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionSolution</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionSolution</shortDescription>
+        <value>Solution</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionStatusCategories</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionStatusCategories</shortDescription>
+        <value>Status &amp; Categories</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionSystemInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionSystemInformation</shortDescription>
+        <value>System Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionUserDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionUserDetails</shortDescription>
+        <value>User Details</value>
+    </labels>
+    <labels>
+        <fullName>LEXCaseSectionWebInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXCaseSectionWebInformation</shortDescription>
+        <value>Web Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXEmpSectionProfessionalInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXEmpSectionProfessionalInformation</shortDescription>
+        <value>Professional Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXOppSection_FinancialInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXOppSection Financial Information</shortDescription>
+        <value>Financial Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXOppSection_OpportunityInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXOppSection Opportunity Information</shortDescription>
+        <value>Opportunity Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXOppSection_RequesterInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXOppSection Requester Information</shortDescription>
+        <value>Requester Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXRLActiveAssets</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRLActiveAssets</shortDescription>
+        <value>Active Assets</value>
+    </labels>
+    <labels>
+        <fullName>LEXRLAssets</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRLAssets</shortDescription>
+        <value>Assets</value>
+    </labels>
+    <labels>
+        <fullName>LEXRLEmployees</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRLEmployees</shortDescription>
+        <value>Employees</value>
+    </labels>
+    <labels>
+        <fullName>LEXRLOpenCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRLOpenCases</shortDescription>
+        <value>Open Cases</value>
+    </labels>
+    <labels>
+        <fullName>LEXRRAssetDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRRAssetDetails</shortDescription>
+        <value>Asset Details</value>
+    </labels>
+    <labels>
+        <fullName>LEXRREmployeeDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXRREmployeeDetails</shortDescription>
+        <value>Employee Details</value>
+    </labels>
+    <labels>
+        <fullName>LEXSectionAddressInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXSectionAddressInformation</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXSectionDescriptionInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXSectionDescriptionInformation</shortDescription>
+        <value>Description Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXSectionGeneralInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXSectionGeneralInformation</shortDescription>
+        <value>General Information</value>
+    </labels>
+    <labels>
+        <fullName>LEXSectionSystemInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LEXSectionSystemInformation</shortDescription>
+        <value>System Information</value>
+    </labels>
+    <labels>
+        <fullName>NewViewLinkLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewViewLinkLabel</shortDescription>
+        <value>Create new view</value>
+    </labels>
+    <labels>
+        <fullName>NoResultSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultSummary</shortDescription>
+        <value>Please modify your search criteria</value>
+    </labels>
+    <labels>
+        <fullName>NoResultTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultTitle</shortDescription>
+        <value>No results</value>
+    </labels>
+    <labels>
+        <fullName>NoViewSelection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoViewSelection</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>ResultBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ResultBlockTitle</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>SearchBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBlockTitle</shortDescription>
+        <value>Search opportunities</value>
+    </labels>
+    <labels>
+        <fullName>SearchBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBtn</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>SearchingBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchingBtn</shortDescription>
+        <value>Searching ...</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsError</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsError</shortDescription>
+        <value>The total number of open activities on the opportunities you selected is greater than the system can handle. Please reduce the number of opportunities to reassign</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsSummary</shortDescription>
+        <value>The view you selected returned more than 1000 rows. Only the 1000 first ones will be displayed</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsTitle</shortDescription>
+        <value>Too many rows returned</value>
+    </labels>
+    <labels>
+        <fullName>TotalFooterLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TotalFooterLabel</shortDescription>
+        <value>Number</value>
+    </labels>
+    <labels>
+        <fullName>ViewSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ViewSearchSection</shortDescription>
+        <value>Search with a view</value>
+    </labels>
+</CustomLabels>

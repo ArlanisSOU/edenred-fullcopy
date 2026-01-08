@@ -1,0 +1,25 @@
+<aura:component controller="LNER01_StoreCreation" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+
+    <aura:attribute name="acc" type="Account" />
+    <aura:attribute name="newStore" type="ER_Store__c" default="{ 'sobjectType': 'ER_Store__c' }" /> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- Display a header with details about the opp -->
+    <div class="slds-page-header" role="banner">
+        <p class="slds-text-heading_label">Parent Account: {!v.acc.Name}</p>
+        <h1 class="slds-page-header__title slds-m-right_small slds-truncate slds-align-left">Create New Store</h1>
+    </div>
+
+
+     <div style="margin-top:4px;"> 
+    <lightning:input aura:id="txtStrName" name="txtStrName" label="Store’s Name" value="{!v.newStore.Name}"/>
+    <lightning:input aura:id="txtStrStreet" name="txtStrStreet" label="Street" value="{!v.newStore.ER_Street__c}"/>  
+    <lightning:input aura:id="txtStrZipCode" name="txtStrZipCode" label="Zip Code" value="{!v.newStore.unknown_custom_field}"/> 
+    <lightning:input aura:id="txtStrCity" name="txtStrCity" label="City" value="{!v.newStore.ER_City__c}"/>  
+    
+    <lightning:button label="Cancel" onclick="{!c.closePopUp}" class="slds-m-top_medium" />
+    <lightning:button label="Save Store" onclick="{!c.saveStore}" variant="brand" class="slds-m-top_medium"/>
+    </div>   
+    
+</aura:component>

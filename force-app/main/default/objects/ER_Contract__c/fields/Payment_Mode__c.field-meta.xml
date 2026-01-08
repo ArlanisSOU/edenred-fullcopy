@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Mode__c</fullName>
+    <label>Payment Mode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Überweisung</fullName>
+                <default>false</default>
+                <label>Überweisung</label>
+            </value>
+            <value>
+                <fullName>Other value I</fullName>
+                <default>false</default>
+                <label>Other value I</label>
+            </value>
+            <value>
+                <fullName>Other Value II</fullName>
+                <default>false</default>
+                <label>Other Value II</label>
+            </value>
+            <value>
+                <fullName>Rechnung</fullName>
+                <default>false</default>
+                <label>Rechnung</label>
+            </value>
+            <value>
+                <fullName>Lastschrift</fullName>
+                <default>false</default>
+                <label>Lastschrift</label>
+            </value>
+            <value>
+                <fullName>ASAT_PT4</fullName>
+                <default>false</default>
+                <label>DIRECT_DEBIT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

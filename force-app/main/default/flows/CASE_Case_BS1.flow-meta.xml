@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>decAsset</name>
+        <label>Asset</label>
+        <locationX>182</locationX>
+        <locationY>803</locationY>
+        <defaultConnector>
+            <targetReference>updEmptyEmployeeIndividualClient</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Empty</defaultConnectorLabel>
+        <rules>
+            <name>decAssetNotEmpty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AssetId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updEmployeeIndividualClientfromAsset</targetReference>
+            </connector>
+            <label>Not Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decCaseRT</name>
+        <label>Case Record Type</label>
+        <locationX>380</locationX>
+        <locationY>587</locationY>
+        <defaultConnector>
+            <targetReference>updSubjectClientMerchantCase</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Client or Merchant Case</defaultConnectorLabel>
+        <rules>
+            <name>decCaseRTUserCase</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ER_User_Case_RT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updSubjectUserCase</targetReference>
+            </connector>
+            <label>User Case</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decSpamCancelled</name>
+        <label>Spam Cancelled</label>
+        <locationX>380</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>decCaseRT</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>decSpamCancelledYES</name>
+            <conditionLogic>(1 or 2) and 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spam</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Cancelled</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ERAT_NewEmail__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updNewEmail</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <description>Set &quot;New Email&quot; to False if Case is closed with &quot;Spam&quot; or &quot;Cancelled&quot; (2024-04-30)
+Set Subject to Case Reason if Subject is empty on Client/Merchant Cases (2024-04-30)
+
+Old Workflow Rules:
+WFER01_Case_RT_User
+
+Old Process Builder:
+ER_Case_Employee_From_Asset
+ER_Case_Individual_From_Asset</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>frmSubjectClientMerchantCase</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Reason})&amp;
+IF(
+   ISBLANK(TEXT({!$Record.ER_CaseReason2__c})),
+   &quot;&quot;,
+   &quot;: &quot;&amp;TEXT({!$Record.ER_CaseReason2__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>frmSubjectUserCase</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Reason}) &amp;
+IF(
+   ISBLANK(TEXT({!$Record.ER_CaseReason2__c})),
+   &quot;&quot;,
+   &quot;: &quot; &amp; TEXT({!$Record.ER_CaseReason2__c})
+)</expression>
+    </formulas>
+    <interviewLabel>CASE: Case BS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CASE: Case BS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>updEmployeeIndividualClientfromAsset</name>
+        <label>Employee Individual Client from Asset</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>ERDE_Client_Employer2__c</field>
+            <value>
+                <elementReference>$Record.Asset.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ER_Employee__c</field>
+            <value>
+                <elementReference>$Record.Asset.ER_Employee__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ER_Individual__c</field>
+            <value>
+                <elementReference>$Record.Asset.ER_Individual__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updEmptyEmployeeIndividualClient</name>
+        <label>Empty Employee Individual Client</label>
+        <locationX>314</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>ERDE_Client_Employer2__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ER_Employee__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ER_Individual__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updNewEmail</name>
+        <label>New Email</label>
+        <locationX>248</locationX>
+        <locationY>395</locationY>
+        <connector>
+            <targetReference>decCaseRT</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ERAT_NewEmail__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updSubjectClientMerchantCase</name>
+        <label>Subject Client Merchant Case</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Subject</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Reason</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>frmSubjectClientMerchantCase</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updSubjectUserCase</name>
+        <label>Subject User Case</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <connector>
+            <targetReference>decAsset</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Subject</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Reason</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>frmSubjectUserCase</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decSpamCancelled</targetReference>
+        </connector>
+        <filterFormula>{!$User.ER_BypassWF__c}=FALSE</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

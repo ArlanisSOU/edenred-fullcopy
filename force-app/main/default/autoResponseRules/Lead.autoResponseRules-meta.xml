@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Lead_Web_AutoAnswer</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>SEO Neue Affiliate Formular</value>
+            </criteriaItems>
+            <senderEmail>info-at@edenred.com</senderEmail>
+            <senderName>Edenred Austria</senderName>
+            <template>unfiled$public/New_Lead_Email_to_Merchant</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>SEO Prospect Formular</value>
+            </criteriaItems>
+            <senderEmail>info-at@edenred.com</senderEmail>
+            <senderName>Edenred Austria</senderName>
+            <template>unfiled$public/New_Lead_Email_to_Customer</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

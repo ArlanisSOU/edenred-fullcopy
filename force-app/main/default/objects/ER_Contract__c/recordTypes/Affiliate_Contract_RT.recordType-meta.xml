@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliate_Contract_RT</fullName>
+    <active>true</active>
+    <label>Affiliate Contract</label>
+    <picklistValues>
+        <picklist>Advisor__c</picklist>
+        <values>
+            <fullName>Cornelia Kuchar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davor Jevtic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pree Philip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romana Mucherl</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CancellationPeriod__c</picklist>
+        <values>
+            <fullName>1 month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 month effective end of quarter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 months effective end of contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 months effective end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 months end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 months end of year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commission_Type__c</picklist>
+        <values>
+            <fullName>Prozentsatz</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Close_Reason__c</picklist>
+        <values>
+            <fullName>Administration too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Express payment too late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High difference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location too isolated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough demand or request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Takeover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Validity_Period__c</picklist>
+        <values>
+            <fullName>1 Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documents__c</picklist>
+        <values>
+            <fullName>ADDENDUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVOICE_AND_ADDENDUM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InvoiceFrequency__c</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annually</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Type__c</picklist>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Paper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Delay__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>78</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Debit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lastschrift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proforma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Mode__c</picklist>
+        <values>
+            <fullName>ASAT_PT4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lastschrift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Value II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other value I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechnung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Überweisung</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductOnInvoice__c</picklist>
+        <values>
+            <fullName>ERAT_Meal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Edenred Geschenk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edenred Geschenk Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edenred Lebensmittel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edenred Lebensmittel Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edenred Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edenred Restaurant Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

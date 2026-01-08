@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>assUserWithPrio</name>
+        <label>User With Prio</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>varUserWithPrio</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserWithPrio.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>updAccountOwnerBasedOnPrio</targetReference>
+        </connector>
+    </assignments>
+    <customErrors>
+        <name>errNoUserWithPrio</name>
+        <label>No User with Prio</label>
+        <locationX>314</locationX>
+        <locationY>611</locationY>
+        <customErrorMessages>
+            <errorMessage>We could not find a user for Prioritization {!$Record.Priorization__c}.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>decAccountHasPrio</name>
+        <label>Account Has Prio</label>
+        <locationX>380</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>decAccountHasPrioYES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Priorization__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getUserWithPrio</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decUsersFound</name>
+        <label>Users Found</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>errNoUserWithPrio</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>decUsersFoundYES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getUserWithPrio</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assUserWithPrio</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <description>SFR-3377
+
+Alte Workflow Rules:
+WKF038_TRI1_Prio_C6_Celine
+WKF022_TRI1_Prio_C1
+WKF037_TRI1_Prio_C5
+WKF039_TRI1_Prio_C7_Rebecca</description>
+    <environments>Default</environments>
+    <interviewLabel>LFERAT_Account_Before Save_Priorization {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACCOUNT: Account BS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>getUserWithPrio</name>
+        <label>User With Prio</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>decUsersFound</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>ERAT_PrioHandler1__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Priorization__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ERAT_PrioHandler2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Priorization__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ERAT_PrioHandler3__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Priorization__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>updAccountOwnerBasedOnPrio</name>
+        <label>Account Owner Based On Prio</label>
+        <locationX>50</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>varUserWithPrio</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decAccountHasPrio</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varUserWithPrio</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

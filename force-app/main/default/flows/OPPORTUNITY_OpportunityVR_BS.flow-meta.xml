@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>errContactRolesMissing</name>
+        <label>Contact Roles Missing</label>
+        <locationX>138</locationX>
+        <locationY>719</locationY>
+        <customErrorMessages>
+            <errorMessage>You have to add contact roles before you can close the opportunity {!$Record.Name} with stage &quot;Closed Won&quot;.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>decOppContactRoles</name>
+        <label>Opportunity Contact Roles</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>errContactRolesMissing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Populated</defaultConnectorLabel>
+        <rules>
+            <name>decOppContactRolesPopulated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getContactRoles</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decOppRT</name>
+        <label>Opportunity Record Type</label>
+        <locationX>402</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decOppRTClientOpportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Client_Opportunity_RT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>decOppStage</targetReference>
+            </connector>
+            <label>Client Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decOppStage</name>
+        <label>Opportunity Stage</label>
+        <locationX>226</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decOppStageClosedWon</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>decOppContactRoles</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Closed Won</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>OPPORTUNITY: Opportunity Validation Rules BS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPPORTUNITY: Opportunity Validation Rules BS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>getContactRoles</name>
+        <label>Get Contact Roles</label>
+        <locationX>402</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>decOppRT</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OpportunityContactRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>276</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>getContactRoles</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>200</triggerOrder>
+</Flow>

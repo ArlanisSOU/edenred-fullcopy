@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Rene_Yvonne</name>
+    <queueMembers>
+        <users>
+            <user>alexander.zalokar@edenred.com</user>
+            <user>christoph.monschein@edenred.com</user>
+            <user>jessica.keck@edenred.com</user>
+            <user>melanie.dollinger@edenred.com</user>
+            <user>nicolas.risska@edenred.com</user>
+            <user>philip.pree@edenred.com</user>
+            <user>rebecca.ghawi@edenred.com</user>
+            <user>rene.petschnig@edenred.com</user>
+            <user>roman.kremsl@edenred.com</user>
+            <user>yvonne.gruber@edenred.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

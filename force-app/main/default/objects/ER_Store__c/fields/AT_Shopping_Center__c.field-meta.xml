@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AT_Shopping_Center__c</fullName>
+    <label>Shopping Center</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auhofcenter</fullName>
+                <default>false</default>
+                <label>Auhofcenter</label>
+            </value>
+            <value>
+                <fullName>Bahnhof City Wien Hauptbahnhof</fullName>
+                <default>false</default>
+                <label>Bahnhof City Wien Hauptbahnhof</label>
+            </value>
+            <value>
+                <fullName>Bahnhof City Wien West</fullName>
+                <default>false</default>
+                <label>Bahnhof City Wien West</label>
+            </value>
+            <value>
+                <fullName>Citygate</fullName>
+                <default>false</default>
+                <label>Citygate</label>
+            </value>
+            <value>
+                <fullName>Citypark</fullName>
+                <default>false</default>
+                <label>Citypark</label>
+            </value>
+            <value>
+                <fullName>Designer Outlet Parndorf</fullName>
+                <default>false</default>
+                <label>Designer Outlet Parndorf</label>
+            </value>
+            <value>
+                <fullName>DEZ</fullName>
+                <default>false</default>
+                <label>DEZ</label>
+            </value>
+            <value>
+                <fullName>Donau Plex</fullName>
+                <default>false</default>
+                <label>Donau Plex</label>
+            </value>
+            <value>
+                <fullName>Donau Zentrum</fullName>
+                <default>false</default>
+                <label>Donau Zentrum</label>
+            </value>
+            <value>
+                <fullName>Einkaufszentrum Hernals</fullName>
+                <default>false</default>
+                <label>Einkaufszentrum Hernals</label>
+            </value>
+            <value>
+                <fullName>Europark</fullName>
+                <default>false</default>
+                <label>Europark</label>
+            </value>
+            <value>
+                <fullName>Fischapark</fullName>
+                <default>false</default>
+                <label>Fischapark</label>
+            </value>
+            <value>
+                <fullName>FMZ Imst</fullName>
+                <default>false</default>
+                <label>FMZ Imst</label>
+            </value>
+            <value>
+                <fullName>Forum 1</fullName>
+                <default>false</default>
+                <label>Forum 1</label>
+            </value>
+            <value>
+                <fullName>G3 Shopping Resort Gerasdorf</fullName>
+                <default>false</default>
+                <label>G3 Shopping Resort Gerasdorf</label>
+            </value>
+            <value>
+                <fullName>Gerngross</fullName>
+                <default>false</default>
+                <label>Gerngross</label>
+            </value>
+            <value>
+                <fullName>Lentia City (Linz)</fullName>
+                <default>false</default>
+                <label>Lentia City (Linz)</label>
+            </value>
+            <value>
+                <fullName>Lugner City</fullName>
+                <default>false</default>
+                <label>Lugner City</label>
+            </value>
+            <value>
+                <fullName>Merkur City</fullName>
+                <default>false</default>
+                <label>Merkur City</label>
+            </value>
+            <value>
+                <fullName>Messepark</fullName>
+                <default>false</default>
+                <label>Messepark</label>
+            </value>
+            <value>
+                <fullName>Millennium City</fullName>
+                <default>false</default>
+                <label>Millennium City</label>
+            </value>
+            <value>
+                <fullName>Murpark</fullName>
+                <default>false</default>
+                <label>Murpark</label>
+            </value>
+            <value>
+                <fullName>Passage Linz</fullName>
+                <default>false</default>
+                <label>Passage Linz</label>
+            </value>
+            <value>
+                <fullName>Plus City</fullName>
+                <default>false</default>
+                <label>Plus City</label>
+            </value>
+            <value>
+                <fullName>Shopping City Seiersberg</fullName>
+                <default>false</default>
+                <label>Shopping City Seiersberg</label>
+            </value>
+            <value>
+                <fullName>Shopping City Süd</fullName>
+                <default>false</default>
+                <label>Shopping City Süd</label>
+            </value>
+            <value>
+                <fullName>Traisenpark</fullName>
+                <default>false</default>
+                <label>Traisenpark</label>
+            </value>
+            <value>
+                <fullName>Vienna Twin Tower</fullName>
+                <default>false</default>
+                <label>Vienna Twin Tower</label>
+            </value>
+            <value>
+                <fullName>Wien Mitte The Mall</fullName>
+                <default>false</default>
+                <label>Wien Mitte The Mall</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

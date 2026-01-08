@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case_AutoAnswer</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Client Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email,Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>kunde-at@edenred.com</replyToEmail>
+            <senderEmail>autorespond.kunde-at@edenred.com</senderEmail>
+            <senderName>Edenred Kundenmanagement</senderName>
+            <template>unfiled$public/New_Case_Email_to_Customer</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Affiliate Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email,Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>partner-at@edenred.com</replyToEmail>
+            <senderEmail>autorespond.partner-at@edenred.com</senderEmail>
+            <senderName>Edenred Partnermanagement</senderName>
+            <template>unfiled$public/New_Case_Email_to_Customer</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>User Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email,Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>nutzer-at@edenred.com</replyToEmail>
+            <senderEmail>autorespond.nutzer-at@edenred.com</senderEmail>
+            <senderName>Edenred Nutzermanagement</senderName>
+            <template>unfiled$public/New_Case_Email_to_Customer</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

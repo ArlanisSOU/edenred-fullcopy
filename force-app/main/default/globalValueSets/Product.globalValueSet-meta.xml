@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Couponing Online</fullName>
+        <default>false</default>
+        <label>Couponing Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Couponing Online+Print</fullName>
+        <default>false</default>
+        <label>Couponing Online+Print</label>
+    </customValue>
+    <customValue>
+        <fullName>Couponing Online+Print+Merchant of the month</fullName>
+        <default>false</default>
+        <label>Couponing Online+Print+Merchant of the month</label>
+    </customValue>
+    <customValue>
+        <fullName>Couponing Print</fullName>
+        <default>false</default>
+        <label>Couponing Print</label>
+    </customValue>
+    <customValue>
+        <fullName>FOOD</fullName>
+        <default>false</default>
+        <label>FOOD Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant of the month</fullName>
+        <default>false</default>
+        <label>Merchant of the month</label>
+    </customValue>
+    <customValue>
+        <fullName>No Product</fullName>
+        <default>false</default>
+        <label>No Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper contract Ticket Compliments</fullName>
+        <default>false</default>
+        <label>Paper contract Ticket Compliments</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper contract Ticket Junior</fullName>
+        <default>false</default>
+        <label>Paper contract Ticket Junior</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper contract TR+TS+TC</fullName>
+        <default>false</default>
+        <label>Paper contract TR+TS+TC</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper contract TS+TC</fullName>
+        <default>false</default>
+        <label>Paper contract TS+TC</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card and Voucher new merchants</fullName>
+        <default>false</default>
+        <label>TC Card and Voucher new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card and Voucher new merchants - chains</fullName>
+        <default>false</default>
+        <label>TC Card and Voucher new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card current merchants</fullName>
+        <default>false</default>
+        <label>TC Card current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card current merchants - chains</fullName>
+        <default>false</default>
+        <label>TC Card current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card new merchants</fullName>
+        <default>false</default>
+        <label>TC Card new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Card new merchants - chains</fullName>
+        <default>false</default>
+        <label>TC Card new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Compliments</fullName>
+        <default>false</default>
+        <label>Ticket Compliments</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Compliments Card</fullName>
+        <default>false</default>
+        <label>Ticket Compliments Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Restaurant</fullName>
+        <default>false</default>
+        <label>Ticket Restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Restaurant Card</fullName>
+        <default>false</default>
+        <label>Ticket Restaurant Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Service</fullName>
+        <default>false</default>
+        <label>Ticket Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Service Card</fullName>
+        <default>false</default>
+        <label>Ticket Service Card</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards and Vouchers new merchants</fullName>
+        <default>false</default>
+        <label>TR+TC Cards and Vouchers new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards and Vouchers new merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TC Cards and Vouchers new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards current merchants</fullName>
+        <default>false</default>
+        <label>TR+TC Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards current merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TC Cards current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards new merchants</fullName>
+        <default>false</default>
+        <label>TR+TC Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TC Cards new merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TC Cards new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards and Vouchers new merchants</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards and Vouchers new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards and Vouchers new merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards and Vouchers new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards current merchants</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards current merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards new merchants</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS+TC Cards new merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TS+TC Cards new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS Cards current merchants</fullName>
+        <default>false</default>
+        <label>TR+TS Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS Cards current merchants - chains</fullName>
+        <default>false</default>
+        <label>TR+TS Cards current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS Cards TCU new merchants</fullName>
+        <default>false</default>
+        <label>TR+TS Cards TCU new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TR+TS Cards TCU new merchants - chain</fullName>
+        <default>false</default>
+        <label>TR+TS Cards TCU new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards and Vouchers new merchants</fullName>
+        <default>false</default>
+        <label>TS+TC Cards and Vouchers new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards and Vouchers new merchants - chains</fullName>
+        <default>false</default>
+        <label>TS+TC Cards and Vouchers new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards current merchants</fullName>
+        <default>false</default>
+        <label>TS+TC Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards current merchants - chains</fullName>
+        <default>false</default>
+        <label>TS+TC Cards current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards new merchants</fullName>
+        <default>false</default>
+        <label>TS+TC Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TS+TC Cards new merchants - chains</fullName>
+        <default>false</default>
+        <label>TS+TC Cards new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TS Card current merchants</fullName>
+        <default>false</default>
+        <label>TS Card current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TS Card current merchants - chain</fullName>
+        <default>false</default>
+        <label>TS Card current merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>TS Card TCU new merchants</fullName>
+        <default>false</default>
+        <label>TS Card TCU new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>TS Card TCU new merchants - chains</fullName>
+        <default>false</default>
+        <label>TS Card TCU new merchants - chains</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Restaurant Plasticless</fullName>
+        <default>false</default>
+        <label>Ticket Restaurant Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Service Plasticless</fullName>
+        <default>false</default>
+        <label>Ticket Service Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Compliments Plasticless</fullName>
+        <default>false</default>
+        <label>Ticket Compliments Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Junior</fullName>
+        <default>false</default>
+        <label>Ticket Junior</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Test</fullName>
+        <default>false</default>
+        <label>Edenred Test</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Restaurant</fullName>
+        <default>false</default>
+        <label>Edenred Restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Lebensmittel</fullName>
+        <default>false</default>
+        <label>Edenred Lebensmittel</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Geschenk</fullName>
+        <default>false</default>
+        <label>Edenred Geschenk</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Restaurant Card</fullName>
+        <default>false</default>
+        <label>Edenred Restaurant Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Lebensmittel Card</fullName>
+        <default>false</default>
+        <label>Edenred Lebensmittel Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Geschenk Card</fullName>
+        <default>false</default>
+        <label>Edenred Geschenk Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Restaurant Plasticless</fullName>
+        <default>false</default>
+        <label>Edenred Restaurant Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Lebensmittel Plasticless</fullName>
+        <default>false</default>
+        <label>Edenred Lebensmittel Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred Geschenk Plasticless</fullName>
+        <default>false</default>
+        <label>Edenred Geschenk Plasticless</label>
+    </customValue>
+    <customValue>
+        <fullName>EG Card and Voucher new merchants</fullName>
+        <default>false</default>
+        <label>EG Card and Voucher new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EG Card current merchants</fullName>
+        <default>false</default>
+        <label>EG Card current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EG Card new merchants</fullName>
+        <default>false</default>
+        <label>EG Card new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>ER+EG Cards current merchants</fullName>
+        <default>false</default>
+        <label>ER+EG Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>ER+EG Cards new merchants</fullName>
+        <default>false</default>
+        <label>ER+EG Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>ER+EL+EG Cards current merchants</fullName>
+        <default>false</default>
+        <label>ER+EL+EG Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>ER+EL+EG Cards new merchants</fullName>
+        <default>false</default>
+        <label>ER+EL+EG Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EL+EG Cards and Vouchers new merchants</fullName>
+        <default>false</default>
+        <label>EL+EG Cards and Vouchers new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EL+EG Cards current merchants</fullName>
+        <default>false</default>
+        <label>EL+EG Cards current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EL+EG Cards new merchants</fullName>
+        <default>false</default>
+        <label>EL+EG Cards new merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>EL Card current merchants</fullName>
+        <default>false</default>
+        <label>EL Card current merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper Contract Edenred Geschenk</fullName>
+        <default>false</default>
+        <label>Paper Contract Edenred Geschenk</label>
+    </customValue>
+    <customValue>
+        <fullName>Wellness Gutschein</fullName>
+        <default>false</default>
+        <label>Wellness Gutschein</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticket Shopping</fullName>
+        <default>false</default>
+        <label>Ticket Shopping</label>
+    </customValue>
+    <customValue>
+        <fullName>Card contract Ticket Shopping</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Card contract Ticket Shopping</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred One - TSC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Edenred One - TSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred One - TRC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Edenred One - TRC</label>
+    </customValue>
+    <masterLabel>Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

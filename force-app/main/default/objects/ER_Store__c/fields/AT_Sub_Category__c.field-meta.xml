@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AT_Sub_Category__c</fullName>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>AT_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baumärkte</fullName>
+                <default>false</default>
+                <label>Baumärkte</label>
+            </value>
+            <value>
+                <fullName>Bekleidung</fullName>
+                <default>false</default>
+                <label>Bekleidung</label>
+            </value>
+            <value>
+                <fullName>Bio-Markt/Reformhaus</fullName>
+                <default>false</default>
+                <label>Bio-Markt/Reformhaus</label>
+            </value>
+            <value>
+                <fullName>Buchhandel</fullName>
+                <default>false</default>
+                <label>Buchhandel</label>
+            </value>
+            <value>
+                <fullName>Büroartikel</fullName>
+                <default>false</default>
+                <label>Büroartikel</label>
+            </value>
+            <value>
+                <fullName>Café &amp; Bäckerei</fullName>
+                <default>false</default>
+                <label>Café &amp; Bäckerei</label>
+            </value>
+            <value>
+                <fullName>Drogerie &amp; Pafümerie</fullName>
+                <default>false</default>
+                <label>Drogerie &amp; Pafümerie</label>
+            </value>
+            <value>
+                <fullName>Elektronik</fullName>
+                <default>false</default>
+                <label>Elektronik</label>
+            </value>
+            <value>
+                <fullName>Erlebnis &amp; Reisen</fullName>
+                <default>false</default>
+                <label>Erlebnis &amp; Reisen</label>
+            </value>
+            <value>
+                <fullName>Ernährungsprogramme</fullName>
+                <default>false</default>
+                <label>Ernährungsprogramme</label>
+            </value>
+            <value>
+                <fullName>Fast Food</fullName>
+                <default>false</default>
+                <label>Fast Food</label>
+            </value>
+            <value>
+                <fullName>Feinkost &amp; Spezialitäten</fullName>
+                <default>false</default>
+                <label>Feinkost &amp; Spezialitäten</label>
+            </value>
+            <value>
+                <fullName>Fitnesscenter</fullName>
+                <default>false</default>
+                <label>Fitnesscenter</label>
+            </value>
+            <value>
+                <fullName>Haushaltswaren</fullName>
+                <default>false</default>
+                <label>Haushaltswaren</label>
+            </value>
+            <value>
+                <fullName>Imbiss &amp; Buffets</fullName>
+                <default>false</default>
+                <label>Imbiss &amp; Buffets</label>
+            </value>
+            <value>
+                <fullName>Kfz Händler/Reparatur</fullName>
+                <default>false</default>
+                <label>Kfz Händler/Reparatur</label>
+            </value>
+            <value>
+                <fullName>Kino</fullName>
+                <default>false</default>
+                <label>Kino</label>
+            </value>
+            <value>
+                <fullName>Lieferdienste</fullName>
+                <default>false</default>
+                <label>Lieferdienste</label>
+            </value>
+            <value>
+                <fullName>Metzgerei/Fleischerei</fullName>
+                <default>false</default>
+                <label>Metzgerei/Fleischerei</label>
+            </value>
+            <value>
+                <fullName>Mietwagenservice</fullName>
+                <default>false</default>
+                <label>Mietwagenservice</label>
+            </value>
+            <value>
+                <fullName>Möbelhäuser</fullName>
+                <default>false</default>
+                <label>Möbelhäuser</label>
+            </value>
+            <value>
+                <fullName>Optiker</fullName>
+                <default>false</default>
+                <label>Optiker</label>
+            </value>
+            <value>
+                <fullName>Psychotherapeut</fullName>
+                <default>false</default>
+                <label>Psychotherapeut</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Schmuck</fullName>
+                <default>false</default>
+                <label>Schmuck</label>
+            </value>
+            <value>
+                <fullName>Schuhmode</fullName>
+                <default>false</default>
+                <label>Schuhmode</label>
+            </value>
+            <value>
+                <fullName>Skigebiete</fullName>
+                <default>false</default>
+                <label>Skigebiete</label>
+            </value>
+            <value>
+                <fullName>Spielwaren &amp; Geschenkartikel</fullName>
+                <default>false</default>
+                <label>Spielwaren &amp; Geschenkartikel</label>
+            </value>
+            <value>
+                <fullName>Sportartikelanbieter</fullName>
+                <default>false</default>
+                <label>Sportartikelanbieter</label>
+            </value>
+            <value>
+                <fullName>Supermarkt</fullName>
+                <default>false</default>
+                <label>Supermarkt</label>
+            </value>
+            <value>
+                <fullName>Tankstelle</fullName>
+                <default>false</default>
+                <label>Tankstelle</label>
+            </value>
+            <value>
+                <fullName>Wellness</fullName>
+                <default>false</default>
+                <label>Wellness</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Baumärkte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Bekleidung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Bio-Markt/Reformhaus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Buchhandel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Büroartikel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Café &amp; Bäckerei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Drogerie &amp; Pafümerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Elektronik</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Erlebnis &amp; Reisen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Ernährungsprogramme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Fast Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Feinkost &amp; Spezialitäten</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Fitnesscenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Haushaltswaren</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Imbiss &amp; Buffets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Kfz Händler/Reparatur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Kino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Lieferdienste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Metzgerei/Fleischerei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Mietwagenservice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Möbelhäuser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Optiker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Psychotherapeut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Restaurants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Schmuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Schuhmode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Skigebiete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Spielwaren &amp; Geschenkartikel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Sportartikelanbieter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Supermarkt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Tankstelle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Essen &amp; Ernährung</controllingFieldValue>
+            <valueName>Wellness</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

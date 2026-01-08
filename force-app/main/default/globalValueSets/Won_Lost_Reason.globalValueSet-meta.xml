@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accepts only cash</fullName>
+        <default>false</default>
+        <label>Accepts only cash</label>
+    </customValue>
+    <customValue>
+        <fullName>Accepts the conditions</fullName>
+        <default>false</default>
+        <label>Accepts the conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional income source</fullName>
+        <default>false</default>
+        <label>Additional income source</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional payment methode</fullName>
+        <default>false</default>
+        <label>Additional payment methode</label>
+    </customValue>
+    <customValue>
+        <fullName>Administration too complex</fullName>
+        <default>false</default>
+        <label>Administration too complex</label>
+    </customValue>
+    <customValue>
+        <fullName>Already clients</fullName>
+        <default>false</default>
+        <label>Already clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual fee</fullName>
+        <default>false</default>
+        <label>Annual fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual network fee</fullName>
+        <default>false</default>
+        <label>Annual network fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Attractive affiliates in the near</fullName>
+        <default>false</default>
+        <label>Attractive affiliates in the near</label>
+    </customValue>
+    <customValue>
+        <fullName>Attrition of our customer</fullName>
+        <default>false</default>
+        <label>Attrition of our customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Bad experience</fullName>
+        <default>false</default>
+        <label>Bad experience</label>
+    </customValue>
+    <customValue>
+        <fullName>Bad experiences in the past</fullName>
+        <default>false</default>
+        <label>Bad experiences in the past</label>
+    </customValue>
+    <customValue>
+        <fullName>Bankruptcy</fullName>
+        <default>false</default>
+        <label>Bankruptcy</label>
+    </customValue>
+    <customValue>
+        <fullName>Better service</fullName>
+        <default>false</default>
+        <label>Better service</label>
+    </customValue>
+    <customValue>
+        <fullName>Can´t fulfill the criteria</fullName>
+        <default>false</default>
+        <label>Can´t fulfill the criteria</label>
+    </customValue>
+    <customValue>
+        <fullName>Canteen</fullName>
+        <default>false</default>
+        <label>Canteen</label>
+    </customValue>
+    <customValue>
+        <fullName>Card solution</fullName>
+        <default>false</default>
+        <label>Card solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Cash</fullName>
+        <default>false</default>
+        <label>Cash</label>
+    </customValue>
+    <customValue>
+        <fullName>Company´s Kindergarten</fullName>
+        <default>false</default>
+        <label>Company´s Kindergarten</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract exists already with a central entity</fullName>
+        <default>false</default>
+        <label>Contract exists already with a central entity</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract terminated</fullName>
+        <default>false</default>
+        <label>Contract terminated</label>
+    </customValue>
+    <customValue>
+        <fullName>Convinced because an important client wants it</fullName>
+        <default>false</default>
+        <label>Convinced because an important client wants it</label>
+    </customValue>
+    <customValue>
+        <fullName>Convincing and insistent sales activities</fullName>
+        <default>false</default>
+        <label>Convincing and insistent sales activities</label>
+    </customValue>
+    <customValue>
+        <fullName>Couponing advertising possibility</fullName>
+        <default>false</default>
+        <label>Couponing advertising possibility</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivery time too long</fullName>
+        <default>false</default>
+        <label>Delivery time too long</label>
+    </customValue>
+    <customValue>
+        <fullName>Do not fit to corporate culture</fullName>
+        <default>false</default>
+        <label>Do not fit to corporate culture</label>
+    </customValue>
+    <customValue>
+        <fullName>Do not offer benefits</fullName>
+        <default>false</default>
+        <label>Do not offer benefits</label>
+    </customValue>
+    <customValue>
+        <fullName>Do not offer gifts</fullName>
+        <default>false</default>
+        <label>Do not offer gifts</label>
+    </customValue>
+    <customValue>
+        <fullName>Edenred One</fullName>
+        <default>false</default>
+        <label>Edenred One</label>
+    </customValue>
+    <customValue>
+        <fullName>Expired Opportunity</fullName>
+        <default>false</default>
+        <label>Expired Opportunity</label>
+    </customValue>
+    <customValue>
+        <fullName>Fee too high</fullName>
+        <default>false</default>
+        <label>Fee too high</label>
+    </customValue>
+    <customValue>
+        <fullName>Good follow up</fullName>
+        <default>false</default>
+        <label>Good follow up</label>
+    </customValue>
+    <customValue>
+        <fullName>Good relationship</fullName>
+        <default>false</default>
+        <label>Good relationship</label>
+    </customValue>
+    <customValue>
+        <fullName>High number ob affiliates</fullName>
+        <default>false</default>
+        <label>High number ob affiliates</label>
+    </customValue>
+    <customValue>
+        <fullName>Inflation bonus</fullName>
+        <default>false</default>
+        <label>Inflation bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Interested in paper vouchers only</fullName>
+        <default>false</default>
+        <label>Interested in paper vouchers only</label>
+    </customValue>
+    <customValue>
+        <fullName>Location too isolated</fullName>
+        <default>false</default>
+        <label>Location too isolated</label>
+    </customValue>
+    <customValue>
+        <fullName>Lost other quote</fullName>
+        <default>false</default>
+        <label>Lost other quote</label>
+    </customValue>
+    <customValue>
+        <fullName>Lost to Competitor (unknown)</fullName>
+        <default>false</default>
+        <label>Lost to Competitor (unknown)</label>
+    </customValue>
+    <customValue>
+        <fullName>Lost to Competitor</fullName>
+        <default>false</default>
+        <label>lost to competitors (name known -&gt; &quot;Competitors&quot; Teil befüllen)</label>
+    </customValue>
+    <customValue>
+        <fullName>Low administration time</fullName>
+        <default>false</default>
+        <label>Low administration time</label>
+    </customValue>
+    <customValue>
+        <fullName>Low service charge</fullName>
+        <default>false</default>
+        <label>Low service charge</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant not interested</fullName>
+        <default>false</default>
+        <label>Merchant not interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Network fee</fullName>
+        <default>false</default>
+        <label>Network fee</label>
+    </customValue>
+    <customValue>
+        <fullName>New decision maker</fullName>
+        <default>false</default>
+        <label>New decision maker</label>
+    </customValue>
+    <customValue>
+        <fullName>No budget</fullName>
+        <default>false</default>
+        <label>No budget</label>
+    </customValue>
+    <customValue>
+        <fullName>No interest</fullName>
+        <default>false</default>
+        <label>No interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Not enough demands/requests</fullName>
+        <default>false</default>
+        <label>Not enough demands/requests</label>
+    </customValue>
+    <customValue>
+        <fullName>No Terminal</fullName>
+        <default>false</default>
+        <label>No Terminal</label>
+    </customValue>
+    <customValue>
+        <fullName>Not interested due to Covid-19</fullName>
+        <default>false</default>
+        <label>Not interested due to Covid-19</label>
+    </customValue>
+    <customValue>
+        <fullName>Not responding</fullName>
+        <default>false</default>
+        <label>Not responding</label>
+    </customValue>
+    <customValue>
+        <fullName>Online advertising possibility</fullName>
+        <default>false</default>
+        <label>Online advertising possibility</label>
+    </customValue>
+    <customValue>
+        <fullName>Opportunity outdated (old)</fullName>
+        <default>false</default>
+        <label>Opportunity outdated (old)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Benefit (mobility, public transport)</fullName>
+        <default>false</default>
+        <label>Other Benefit (mobility, public transport)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other kind of tax free gifts (Spende, Arbeitskleidung, Betriebspension)</fullName>
+        <default>false</default>
+        <label>Other kind of tax free gifts (Spende, Arbeitskleidung, Betriebspension)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other kinds of gifts</fullName>
+        <default>false</default>
+        <label>Other kinds of gifts (Sachgeschenke)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other vouchers</fullName>
+        <default>false</default>
+        <label>Other vouchers</label>
+    </customValue>
+    <customValue>
+        <fullName>Own vouchers</fullName>
+        <default>false</default>
+        <label>Own vouchers</label>
+    </customValue>
+    <customValue>
+        <fullName>Personalization of the product, Logo</fullName>
+        <default>false</default>
+        <label>Personalization of the product, Logo</label>
+    </customValue>
+    <customValue>
+        <fullName>Quick delivery time</fullName>
+        <default>false</default>
+        <label>Quick delivery time</label>
+    </customValue>
+    <customValue>
+        <fullName>Quick response time</fullName>
+        <default>false</default>
+        <label>Quick response time</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebate</fullName>
+        <default>false</default>
+        <label>Rebate</label>
+    </customValue>
+    <customValue>
+        <fullName>Recommendation</fullName>
+        <default>false</default>
+        <label>Recommendation</label>
+    </customValue>
+    <customValue>
+        <fullName>Registration fee</fullName>
+        <default>false</default>
+        <label>Registration fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Request coming from clients</fullName>
+        <default>false</default>
+        <label>Request coming from clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Right timing</fullName>
+        <default>false</default>
+        <label>Right timing</label>
+    </customValue>
+    <customValue>
+        <fullName>Special service charge</fullName>
+        <default>false</default>
+        <label>Special service charge</label>
+    </customValue>
+    <customValue>
+        <fullName>Store closed</fullName>
+        <default>false</default>
+        <label>Store closed</label>
+    </customValue>
+    <customValue>
+        <fullName>Terminal fee too high</fullName>
+        <default>false</default>
+        <label>Terminal fee too high</label>
+    </customValue>
+    <customValue>
+        <fullName>Time saving</fullName>
+        <default>false</default>
+        <label>Time saving</label>
+    </customValue>
+    <customValue>
+        <fullName>To be better than competitors</fullName>
+        <default>false</default>
+        <label>To be better than competitors</label>
+    </customValue>
+    <customValue>
+        <fullName>Too few affiliated shops/restaurants</fullName>
+        <default>false</default>
+        <label>Too few affiliated shops/restaurants</label>
+    </customValue>
+    <customValue>
+        <fullName>Too few requests</fullName>
+        <default>false</default>
+        <label>Too few requests</label>
+    </customValue>
+    <customValue>
+        <fullName>Too few volume</fullName>
+        <default>false</default>
+        <label>Too few volume</label>
+    </customValue>
+    <customValue>
+        <fullName>Too much work</fullName>
+        <default>false</default>
+        <label>Too much work</label>
+    </customValue>
+    <customValue>
+        <fullName>Variety of affiliates</fullName>
+        <default>false</default>
+        <label>Variety of affiliates</label>
+    </customValue>
+    <customValue>
+        <fullName>Wants to accept cards only</fullName>
+        <default>false</default>
+        <label>Wants to accept cards only</label>
+    </customValue>
+    <customValue>
+        <fullName>Wants to accept vouchers only</fullName>
+        <default>false</default>
+        <label>Wants to accept vouchers only</label>
+    </customValue>
+    <customValue>
+        <fullName>Won to Competitor</fullName>
+        <default>false</default>
+        <label>Won to Competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>Product features</fullName>
+        <default>false</default>
+        <label>Product features</label>
+    </customValue>
+    <customValue>
+        <fullName>Pricing</fullName>
+        <default>false</default>
+        <label>Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Affiliates network</fullName>
+        <default>false</default>
+        <label>Affiliates network</label>
+    </customValue>
+    <customValue>
+        <fullName>Refused to speak</fullName>
+        <default>false</default>
+        <label>Refused to speak</label>
+    </customValue>
+    <customValue>
+        <fullName>change of mind</fullName>
+        <default>false</default>
+        <label>change of mind</label>
+    </customValue>
+    <customValue>
+        <fullName>Lack of Budget</fullName>
+        <default>false</default>
+        <label>Lack of Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Too much administrative work</fullName>
+        <default>false</default>
+        <label>Too much administrative work</label>
+    </customValue>
+    <customValue>
+        <fullName>Asked to be recontacted in the future</fullName>
+        <default>false</default>
+        <label>Asked to be recontacted in the future</label>
+    </customValue>
+    <customValue>
+        <fullName>Automatic system closure</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Automatic system closure</label>
+    </customValue>
+    <masterLabel>Won Lost Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

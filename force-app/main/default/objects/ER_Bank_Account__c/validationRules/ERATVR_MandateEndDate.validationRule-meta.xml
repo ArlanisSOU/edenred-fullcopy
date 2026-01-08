@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERATVR_MandateEndDate</fullName>
+    <active>true</active>
+    <description>The authorization end date must be later than the signing date.</description>
+    <errorConditionFormula>IF(
+   NOT(ISBLANK( ERAT_MandateAuthorizationEndDate__c )),
+   ERAT_MandateAuthorizationEndDate__c &lt;  ERAT_MandateAuthorizationSigningDate__c ,
+   FALSE
+)</errorConditionFormula>
+    <errorDisplayField>ERAT_MandateAuthorizationEndDate__c</errorDisplayField>
+    <errorMessage>The authorization end date must be later than the signing date.</errorMessage>
+</ValidationRule>

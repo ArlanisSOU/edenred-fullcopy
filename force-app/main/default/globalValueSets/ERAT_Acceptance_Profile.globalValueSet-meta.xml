@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AP_TC</fullName>
+        <default>false</default>
+        <label>AP_TC</label>
+    </customValue>
+    <customValue>
+        <fullName>AP_TR</fullName>
+        <default>false</default>
+        <label>AP_TR</label>
+    </customValue>
+    <customValue>
+        <fullName>AP_TS</fullName>
+        <default>false</default>
+        <label>AP_TS</label>
+    </customValue>
+    <masterLabel>Acceptance Profile</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

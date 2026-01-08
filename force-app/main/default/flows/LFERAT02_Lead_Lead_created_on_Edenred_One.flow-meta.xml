@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>send_email_to_sales_director</name>
+        <label>send email to sales director</label>
+        <locationX>242</locationX>
+        <locationY>384</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alexander.zalokar@edenred.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Lead not yet processed!</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>ttEmailToSales</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_if_Status_new</name>
+        <label>Check if Status new</label>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_New_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Company_Size__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>send_email_to_sales_director</targetReference>
+            </connector>
+            <label>Status New true</label>
+        </rules>
+    </decisions>
+    <description>Send an email to sales director, when the lead is still in status new 30 minutes after created date</description>
+    <environments>Default</environments>
+    <interviewLabel>LFERAT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LEAD: Email Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>wait_1_minute</name>
+            <connector>
+                <targetReference>Check_if_Status_new</targetReference>
+            </connector>
+            <label>wait 3 hours</label>
+            <offsetNumber>24</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>EmailtoSalesDirector</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The following lead has been in status “new” for 30 minutes and has not yet been processed.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Company Name: {!$Record.Company}&lt;/p&gt;&lt;p&gt;Company Size: {!$Record.Company_Size__c}&lt;/p&gt;&lt;p&gt;Number of Employees {!$Record{!$Record.NumberOfEmployees}&lt;/p&gt;&lt;p&gt;Owner: {!$Record.Owner:User.Profile.Id}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NewLeadonEdenredOne</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A new Lead was created on Edenred One.
+For more details, please access the below link
+https://edenredat.lightning.force.com/lightning/r/Lead/{!$Record.Id}/view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ttEmailToSales</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello!
+The following Lead has been in status “new” for 3 hours and has not yet been processed.
+Company Name: {!$Record.Company}
+Company Size: {!$Record.Company_Size__c}
+Number of Employees: {!$Record.NumberOfEmployees}
+Owner: {!$Record.Owner:User.FirstName} {!$Record.Owner:User.LastName}
+
+Link: https://edenredat.lightning.force.com/lightning/r/Lead/{!$Record.Id}/view</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,44 @@
+/* this is global style added to SF Lightning */
+
+.slds-modal__container{    
+    max-width: 70rem !important;
+    width:80% !important;    
+}
+
+.slds-button-fullwidth {
+	width: 100%;
+}
+
+
+/* Change background for dedup warning from gray to orange */
+.forceDedupeManager.slds-inline_icon_text {
+    background-color: rgb(255,200,0) !important;
+}
+
+/*
+ * Hack - Replace footer button Cancel > Close
+ * may affect also other modals
+ */
+
+body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > button  {
+  width: 100%;
+}
+
+body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > button > span {
+  display: none !important;
+}
+body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > button:after {
+  content: 'Close';
+}
+
+/*
+ * Pop-up height is set in Salesforce action configuration
+ * Not to be set in CSS
+ */
+
+/*
+.modal-body {
+min-height: 400px !important;
+}
+*/
+

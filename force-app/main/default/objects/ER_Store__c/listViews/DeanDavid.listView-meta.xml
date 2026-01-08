@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeanDavid</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Partner_Code__c</columns>
+    <columns>ER_Merchant__c</columns>
+    <columns>ER_Street__c</columns>
+    <columns>Zip_Code__c</columns>
+    <columns>ER_City__c</columns>
+    <columns>AT_Status__c</columns>
+    <columns>AT_Sub_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Dean</value>
+    </filters>
+    <label>DeanDavid</label>
+    <sharedTo>
+        <role>Affiliate_Sales</role>
+    </sharedTo>
+</ListView>

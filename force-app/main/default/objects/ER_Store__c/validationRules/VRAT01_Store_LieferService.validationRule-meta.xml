@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRAT01_Store_LieferService</fullName>
+    <active>true</active>
+    <description>This rule controles that the lieferservice fields are filled in when the checkbox LieferService is ticked</description>
+    <errorConditionFormula>AND(
+ (AT_LieferService__c = true),
+OR(
+ISBLANK( AT_LieferService_Area__c ),
+ISPICKVAL( AT_Lieferservice_Payment__c,&apos;&apos;),
+ISPICKVAL( AT_Lieferservice_Payment_Online__c ,&apos;&apos;)))</errorConditionFormula>
+    <errorMessage>The information about Lieferservice are mandatories when the field Lieferservice is ticked.</errorMessage>
+</ValidationRule>

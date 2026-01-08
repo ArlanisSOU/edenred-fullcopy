@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Client_Contract</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Client Contract</label>
+        <sharedTo>
+            <group>Philip_Pree</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Contract</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>All_Contracts_Edenred_visible_by_Mathieu_Gougibus</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All Contracts Edenred visible by Mathieu Gougibus</label>
+        <sharedTo>
+            <group>Mathieu_Gougibus</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Alle_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>All_Users_Contracts_Data_visible_by_Christophe_Ranc</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All Users Contracts Data visible by Christophe Ranc</label>
+        <sharedTo>
+            <group>Christophe_Ranc</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Alle_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Clients_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Clients Sales</label>
+        <sharedTo>
+            <group>Clients_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Clients_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Contract_Sales_shared_with_Customer_Service</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Contract Sales shared with Customer Service</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Customer_Service_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Sales_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Contract_Tobias_with_ERDE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Contract Tobias with ERDE</label>
+        <sharedTo>
+            <group>ERDE_Edith_Bernhard</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ERDE_Telesales_Tobias_Weinberger</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Customer_Service_w_Customer_Service</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Customer Service w Customer Service</label>
+        <sharedTo>
+            <group>Customer_Service</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Customer_Service</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Group_Customer_Service_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Group Customer Service/Sales</label>
+        <sharedTo>
+            <group>Customer_Service</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Clients_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Group_Merchants_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Group Merchants Sales</label>
+        <sharedTo>
+            <group>Affiliates_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Affiliates_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

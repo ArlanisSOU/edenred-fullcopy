@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PPSStoreNameLength</fullName>
+    <active>true</active>
+    <description>PPS Store Name Length max. 100 Characters</description>
+    <errorConditionFormula>LEN( PPSStoreName__c ) &gt; 100</errorConditionFormula>
+    <errorMessage>The combination Store Name, Street, ZIP, and City is too long for PPS. Only 100 characters are allowed.</errorMessage>
+</ValidationRule>

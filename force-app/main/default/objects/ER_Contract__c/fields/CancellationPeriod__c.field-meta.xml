@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancellationPeriod__c</fullName>
+    <label>Cancellation Period</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>1 month</fullName>
+                <default>false</default>
+                <label>1 month</label>
+            </value>
+            <value>
+                <fullName>1 month effective end of quarter</fullName>
+                <default>false</default>
+                <label>1 month effective end of quarter</label>
+            </value>
+            <value>
+                <fullName>3 months</fullName>
+                <default>false</default>
+                <label>3 months</label>
+            </value>
+            <value>
+                <fullName>3 months effective end of month</fullName>
+                <default>false</default>
+                <label>3 months effective end of month</label>
+            </value>
+            <value>
+                <fullName>3 months effective end of contract</fullName>
+                <default>false</default>
+                <label>3 months effective end of contract</label>
+            </value>
+            <value>
+                <fullName>6 months end of month</fullName>
+                <default>false</default>
+                <label>6 months end of month</label>
+            </value>
+            <value>
+                <fullName>6 months end of year</fullName>
+                <default>false</default>
+                <label>6 months end of year</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

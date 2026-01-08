@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Close_Reason__c</fullName>
+    <label>Contract Close Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administration too high</fullName>
+                <default>false</default>
+                <label>Administration too high</label>
+            </value>
+            <value>
+                <fullName>Annual Fee</fullName>
+                <default>false</default>
+                <label>Annual Fee</label>
+            </value>
+            <value>
+                <fullName>Bad experience</fullName>
+                <default>false</default>
+                <label>Bad experience</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Closed company</fullName>
+                <default>false</default>
+                <label>Closed company</label>
+            </value>
+            <value>
+                <fullName>Delayed payment</fullName>
+                <default>false</default>
+                <label>Delayed payment</label>
+            </value>
+            <value>
+                <fullName>Express payment too late</fullName>
+                <default>false</default>
+                <label>Express payment too late</label>
+            </value>
+            <value>
+                <fullName>Fee too high</fullName>
+                <default>false</default>
+                <label>Fee too high</label>
+            </value>
+            <value>
+                <fullName>High difference</fullName>
+                <default>false</default>
+                <label>High difference</label>
+            </value>
+            <value>
+                <fullName>Location too isolated</fullName>
+                <default>false</default>
+                <label>Location too isolated</label>
+            </value>
+            <value>
+                <fullName>Low volume</fullName>
+                <default>false</default>
+                <label>Low volume</label>
+            </value>
+            <value>
+                <fullName>Not enough demand or request</fullName>
+                <default>false</default>
+                <label>Not enough demand or request</label>
+            </value>
+            <value>
+                <fullName>Takeover</fullName>
+                <default>false</default>
+                <label>Takeover</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

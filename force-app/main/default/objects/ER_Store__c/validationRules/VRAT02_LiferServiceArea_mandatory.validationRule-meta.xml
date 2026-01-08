@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRAT02_LiferServiceArea_mandatory</fullName>
+    <active>true</active>
+    <description>This rule controls that the LieferService area field is filled in when the field Lieferservice is ticked</description>
+    <errorConditionFormula>AND(
+ AT_LieferService__c = TRUE,
+ISBLANK( AT_LieferService_Area__c ))</errorConditionFormula>
+    <errorDisplayField>AT_LieferService_Area__c</errorDisplayField>
+    <errorMessage>The field LieferService Area is mandatory when LieferService is ticked.</errorMessage>
+</ValidationRule>

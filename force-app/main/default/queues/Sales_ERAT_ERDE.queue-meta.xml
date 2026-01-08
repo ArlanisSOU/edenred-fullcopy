@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Sales ERAT-ERDE</name>
+    <queueMembers>
+        <roles>
+            <role>Sales_Manager</role>
+        </roles>
+        <users>
+            <user>bernhard.rother@edenred.com</user>
+            <user>christoph.monschein@edenred.com</user>
+            <user>claudia.eisenkoeck@edenred.com</user>
+            <user>edith.molitor@edenred.com</user>
+            <user>jessica.keck@edenred.com</user>
+            <user>michaela.golfinopoulos@edenred.com</user>
+            <user>philip.pree@edenred.com</user>
+            <user>tobias.weinberger@edenred.com</user>
+            <user>zsanett.maresch@edenred.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AffiliateContracts</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Contract_Start_Date__c</columns>
+    <columns>Contract_Close_Date__c</columns>
+    <columns>Commission_Value__c</columns>
+    <columns>AT_Yearly_Fee__c</columns>
+    <columns>AT_Opening_Fee__c</columns>
+    <columns>AT_Closing_Fee__c</columns>
+    <columns>Advisor__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ER_Contract__c.Affiliate_Contract_RT</value>
+    </filters>
+    <label>Affiliate Contracts</label>
+</ListView>

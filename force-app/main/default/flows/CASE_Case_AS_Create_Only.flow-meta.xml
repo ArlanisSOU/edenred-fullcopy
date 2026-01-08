@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>eaAffiliateEmail</name>
+        <label>Email Alert Affiliate Email</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>Case.EA001_New_Case_Affiliate_Email_Claudia</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.EA001_New_Case_Affiliate_Email_Claudia</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>decCaseOrigin</name>
+        <label>Case Origin</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decCaseOriginWeb</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Origin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Web</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>eaAffiliateEmail</targetReference>
+            </connector>
+            <label>Web</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decCaseRT</name>
+        <label>Case RT</label>
+        <locationX>336</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decCaseRTAffiliate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Affiliate_Case</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>decCaseOrigin</targetReference>
+            </connector>
+            <label>Affiliate Case</label>
+        </rules>
+    </decisions>
+    <description>Old Workflow Rule:
+WKF008_Email_Alert_New_Affiliate_Case</description>
+    <environments>Default</environments>
+    <interviewLabel>CASE: Case AS Create Only {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CASE: Case AS Create Only</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>decCaseRT</targetReference>
+        </connector>
+        <filterFormula>{!$User.ER_BypassWF__c}=FALSE</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

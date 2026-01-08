@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Amstetten</fullName>
+        <default>false</default>
+        <label>Amstetten</label>
+    </customValue>
+    <customValue>
+        <fullName>Baden</fullName>
+        <default>false</default>
+        <label>Baden</label>
+    </customValue>
+    <customValue>
+        <fullName>Bludenz</fullName>
+        <default>false</default>
+        <label>Bludenz</label>
+    </customValue>
+    <customValue>
+        <fullName>Braunau am Inn</fullName>
+        <default>false</default>
+        <label>Braunau am Inn</label>
+    </customValue>
+    <customValue>
+        <fullName>Bregenz</fullName>
+        <default>false</default>
+        <label>Bregenz</label>
+    </customValue>
+    <customValue>
+        <fullName>Bruck an der Leitha</fullName>
+        <default>false</default>
+        <label>Bruck an der Leitha</label>
+    </customValue>
+    <customValue>
+        <fullName>Bruck-Mürzzuschlag</fullName>
+        <default>false</default>
+        <label>Bruck-Mürzzuschlag</label>
+    </customValue>
+    <customValue>
+        <fullName>Deutschlandsberg</fullName>
+        <default>false</default>
+        <label>Deutschlandsberg</label>
+    </customValue>
+    <customValue>
+        <fullName>Dornbirn</fullName>
+        <default>false</default>
+        <label>Dornbirn</label>
+    </customValue>
+    <customValue>
+        <fullName>Eferding</fullName>
+        <default>false</default>
+        <label>Eferding</label>
+    </customValue>
+    <customValue>
+        <fullName>Eisenstadt (Stadt)</fullName>
+        <default>false</default>
+        <label>Eisenstadt (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Eisenstadt-Umgebung</fullName>
+        <default>false</default>
+        <label>Eisenstadt-Umgebung</label>
+    </customValue>
+    <customValue>
+        <fullName>Feldkirch</fullName>
+        <default>false</default>
+        <label>Feldkirch</label>
+    </customValue>
+    <customValue>
+        <fullName>Feldkirchen</fullName>
+        <default>false</default>
+        <label>Feldkirchen</label>
+    </customValue>
+    <customValue>
+        <fullName>Freistadt</fullName>
+        <default>false</default>
+        <label>Freistadt</label>
+    </customValue>
+    <customValue>
+        <fullName>Gänserndorf</fullName>
+        <default>false</default>
+        <label>Gänserndorf</label>
+    </customValue>
+    <customValue>
+        <fullName>Gmünd</fullName>
+        <default>false</default>
+        <label>Gmünd</label>
+    </customValue>
+    <customValue>
+        <fullName>Gmunden</fullName>
+        <default>false</default>
+        <label>Gmunden</label>
+    </customValue>
+    <customValue>
+        <fullName>Graz (Stadt)</fullName>
+        <default>false</default>
+        <label>Graz (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Graz-Umgebung</fullName>
+        <default>false</default>
+        <label>Graz-Umgebung</label>
+    </customValue>
+    <customValue>
+        <fullName>Grieskirchen</fullName>
+        <default>false</default>
+        <label>Grieskirchen</label>
+    </customValue>
+    <customValue>
+        <fullName>Güssing</fullName>
+        <default>false</default>
+        <label>Güssing</label>
+    </customValue>
+    <customValue>
+        <fullName>Hallein</fullName>
+        <default>false</default>
+        <label>Hallein</label>
+    </customValue>
+    <customValue>
+        <fullName>Hartberg-Fürstenfeld</fullName>
+        <default>false</default>
+        <label>Hartberg-Fürstenfeld</label>
+    </customValue>
+    <customValue>
+        <fullName>Hermagor</fullName>
+        <default>false</default>
+        <label>Hermagor</label>
+    </customValue>
+    <customValue>
+        <fullName>Hollabrunn</fullName>
+        <default>false</default>
+        <label>Hollabrunn</label>
+    </customValue>
+    <customValue>
+        <fullName>Horn</fullName>
+        <default>false</default>
+        <label>Horn</label>
+    </customValue>
+    <customValue>
+        <fullName>Imst</fullName>
+        <default>false</default>
+        <label>Imst</label>
+    </customValue>
+    <customValue>
+        <fullName>Innsbruck (Land)</fullName>
+        <default>false</default>
+        <label>Innsbruck (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Innsbruck (Stadt)</fullName>
+        <default>false</default>
+        <label>Innsbruck (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Jennersdorf</fullName>
+        <default>false</default>
+        <label>Jennersdorf</label>
+    </customValue>
+    <customValue>
+        <fullName>Kirchdorf an der Krems</fullName>
+        <default>false</default>
+        <label>Kirchdorf an der Krems</label>
+    </customValue>
+    <customValue>
+        <fullName>Kitzbühel</fullName>
+        <default>false</default>
+        <label>Kitzbühel</label>
+    </customValue>
+    <customValue>
+        <fullName>Klagenfurt (Land)</fullName>
+        <default>false</default>
+        <label>Klagenfurt (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Klagenfurt (Stadt)</fullName>
+        <default>false</default>
+        <label>Klagenfurt (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Korneuburg</fullName>
+        <default>false</default>
+        <label>Korneuburg</label>
+    </customValue>
+    <customValue>
+        <fullName>Krems (Land)</fullName>
+        <default>false</default>
+        <label>Krems (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Krems (Stadt)</fullName>
+        <default>false</default>
+        <label>Krems (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Kufstein</fullName>
+        <default>false</default>
+        <label>Kufstein</label>
+    </customValue>
+    <customValue>
+        <fullName>Landeck</fullName>
+        <default>false</default>
+        <label>Landeck</label>
+    </customValue>
+    <customValue>
+        <fullName>Leibnitz</fullName>
+        <default>false</default>
+        <label>Leibnitz</label>
+    </customValue>
+    <customValue>
+        <fullName>Leoben</fullName>
+        <default>false</default>
+        <label>Leoben</label>
+    </customValue>
+    <customValue>
+        <fullName>Lienz</fullName>
+        <default>false</default>
+        <label>Lienz</label>
+    </customValue>
+    <customValue>
+        <fullName>Liezen</fullName>
+        <default>false</default>
+        <label>Liezen</label>
+    </customValue>
+    <customValue>
+        <fullName>Lilienfeld</fullName>
+        <default>false</default>
+        <label>Lilienfeld</label>
+    </customValue>
+    <customValue>
+        <fullName>Linz (Land)</fullName>
+        <default>false</default>
+        <label>Linz (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Linz (Stadt)</fullName>
+        <default>false</default>
+        <label>Linz (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mattersburg</fullName>
+        <default>false</default>
+        <label>Mattersburg</label>
+    </customValue>
+    <customValue>
+        <fullName>Melk</fullName>
+        <default>false</default>
+        <label>Melk</label>
+    </customValue>
+    <customValue>
+        <fullName>Mistelbach</fullName>
+        <default>false</default>
+        <label>Mistelbach</label>
+    </customValue>
+    <customValue>
+        <fullName>Mödling</fullName>
+        <default>false</default>
+        <label>Mödling</label>
+    </customValue>
+    <customValue>
+        <fullName>Murau</fullName>
+        <default>false</default>
+        <label>Murau</label>
+    </customValue>
+    <customValue>
+        <fullName>Murtal</fullName>
+        <default>false</default>
+        <label>Murtal</label>
+    </customValue>
+    <customValue>
+        <fullName>Neunkirchen</fullName>
+        <default>false</default>
+        <label>Neunkirchen</label>
+    </customValue>
+    <customValue>
+        <fullName>Neusiedl am See</fullName>
+        <default>false</default>
+        <label>Neusiedl am See</label>
+    </customValue>
+    <customValue>
+        <fullName>Oberpullendorf</fullName>
+        <default>false</default>
+        <label>Oberpullendorf</label>
+    </customValue>
+    <customValue>
+        <fullName>Oberwart</fullName>
+        <default>false</default>
+        <label>Oberwart</label>
+    </customValue>
+    <customValue>
+        <fullName>Perg</fullName>
+        <default>false</default>
+        <label>Perg</label>
+    </customValue>
+    <customValue>
+        <fullName>Reutte</fullName>
+        <default>false</default>
+        <label>Reutte</label>
+    </customValue>
+    <customValue>
+        <fullName>Ried im Innkreis</fullName>
+        <default>false</default>
+        <label>Ried im Innkreis</label>
+    </customValue>
+    <customValue>
+        <fullName>Rohrbach</fullName>
+        <default>false</default>
+        <label>Rohrbach</label>
+    </customValue>
+    <customValue>
+        <fullName>Rust (Stadt)</fullName>
+        <default>false</default>
+        <label>Rust (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Salzburg (Stadt)</fullName>
+        <default>false</default>
+        <label>Salzburg (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Salzburg-Umgebung</fullName>
+        <default>false</default>
+        <label>Salzburg-Umgebung</label>
+    </customValue>
+    <customValue>
+        <fullName>Schärding</fullName>
+        <default>false</default>
+        <label>Schärding</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheibbs</fullName>
+        <default>false</default>
+        <label>Scheibbs</label>
+    </customValue>
+    <customValue>
+        <fullName>Schwaz</fullName>
+        <default>false</default>
+        <label>Schwaz</label>
+    </customValue>
+    <customValue>
+        <fullName>Spittal an der Drau</fullName>
+        <default>false</default>
+        <label>Spittal an der Drau</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Johann im Pongau</fullName>
+        <default>false</default>
+        <label>St. Johann im Pongau</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Pölten (Land)</fullName>
+        <default>false</default>
+        <label>St. Pölten (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Pölten (Stadt)</fullName>
+        <default>false</default>
+        <label>St. Pölten (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>St. Veit an der Glan</fullName>
+        <default>false</default>
+        <label>St. Veit an der Glan</label>
+    </customValue>
+    <customValue>
+        <fullName>Steyr (Land)</fullName>
+        <default>false</default>
+        <label>Steyr (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Steyr (Stadt)</fullName>
+        <default>false</default>
+        <label>Steyr (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Südoststeiermark</fullName>
+        <default>false</default>
+        <label>Südoststeiermark</label>
+    </customValue>
+    <customValue>
+        <fullName>Tamsweg</fullName>
+        <default>false</default>
+        <label>Tamsweg</label>
+    </customValue>
+    <customValue>
+        <fullName>Tulln</fullName>
+        <default>false</default>
+        <label>Tulln</label>
+    </customValue>
+    <customValue>
+        <fullName>Urfahr-Umgebung</fullName>
+        <default>false</default>
+        <label>Urfahr-Umgebung</label>
+    </customValue>
+    <customValue>
+        <fullName>Villach (Land)</fullName>
+        <default>false</default>
+        <label>Villach (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Villach (Stadt)</fullName>
+        <default>false</default>
+        <label>Villach (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Vöcklabruck</fullName>
+        <default>false</default>
+        <label>Vöcklabruck</label>
+    </customValue>
+    <customValue>
+        <fullName>Voitsberg</fullName>
+        <default>false</default>
+        <label>Voitsberg</label>
+    </customValue>
+    <customValue>
+        <fullName>Völkermarkt</fullName>
+        <default>false</default>
+        <label>Völkermarkt</label>
+    </customValue>
+    <customValue>
+        <fullName>Waidhofen an der Thaya</fullName>
+        <default>false</default>
+        <label>Waidhofen an der Thaya</label>
+    </customValue>
+    <customValue>
+        <fullName>Waidhofen an der Ybbs</fullName>
+        <default>false</default>
+        <label>Waidhofen an der Ybbs</label>
+    </customValue>
+    <customValue>
+        <fullName>Weiz</fullName>
+        <default>false</default>
+        <label>Weiz</label>
+    </customValue>
+    <customValue>
+        <fullName>Wels (Land)</fullName>
+        <default>false</default>
+        <label>Wels (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wels (Stadt)</fullName>
+        <default>false</default>
+        <label>Wels (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wien (Stadt)</fullName>
+        <default>false</default>
+        <label>Wien (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wiener Neustadt (Land)</fullName>
+        <default>false</default>
+        <label>Wiener Neustadt (Land)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wiener Neustadt (Stadt)</fullName>
+        <default>false</default>
+        <label>Wiener Neustadt (Stadt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wien-Umgebung</fullName>
+        <default>false</default>
+        <label>Wien-Umgebung</label>
+    </customValue>
+    <customValue>
+        <fullName>Wolfsberg</fullName>
+        <default>false</default>
+        <label>Wolfsberg</label>
+    </customValue>
+    <customValue>
+        <fullName>Zell am See</fullName>
+        <default>false</default>
+        <label>Zell am See</label>
+    </customValue>
+    <customValue>
+        <fullName>Zwettl</fullName>
+        <default>false</default>
+        <label>Zwettl</label>
+    </customValue>
+    <masterLabel>Politisches Bezirk</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

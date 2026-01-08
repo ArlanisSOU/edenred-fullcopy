@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>decAcceptorStatus</name>
+        <label>Acceptor Status</label>
+        <locationX>578</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decAcceptorStatusActive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AT_Acceptor_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>decStoreAcceptsPayment</targetReference>
+            </connector>
+            <label>Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decStoreAcceptsPayment</name>
+        <label>Store Accepts Payment</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>decStoreAcceptsPaymentNone</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ER_Store__r.AT_Accepts_Payment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>None</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ER_Store__r.AT_Accepts_Payment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updStoreAcceptsPaymentCardOnly</targetReference>
+            </connector>
+            <label>None</label>
+        </rules>
+        <rules>
+            <name>decStoreAcceptsPaymentVoucherOnly</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ER_Store__r.AT_Accepts_Payment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Voucher only</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updStoreAcceptsPaymentVoucherCard</targetReference>
+            </connector>
+            <label>Voucher Only</label>
+        </rules>
+    </decisions>
+    <description>2025-05-20 STE: MID+SUB-MID Calculation added
+2025-05-20 STE: Calculate MIDs on Store</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>frmMIDSubMIDAuthorization</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.ER_MID_Authorization__c})), IF(NOT(ISBLANK({!$Record.ER_Sub_MID_Authorization__c})), {!$Record.ER_MID_Authorization__c}&amp;&apos;_&apos;&amp;{!$Record.ER_Sub_MID_Authorization__c}, {!$Record.ER_MID_Authorization__c}), &apos;&apos;)</expression>
+    </formulas>
+    <interviewLabel>ACCEPTOR: Acceptor AS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACCEPTOR: Acceptor AS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>getStoreID</name>
+        <label>Get Store ID</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>subflowACCOUNTCalculateMIDs</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ER_Store__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ER_Store__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>updMIDSUbMIDAuthorization</name>
+        <label>Update MID+SubMID Authoriziation</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>getStoreID</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ERAT_MIDSubMIDAutothorization__c</field>
+            <value>
+                <elementReference>frmMIDSubMIDAuthorization</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updStoreAcceptsPaymentCardOnly</name>
+        <label>Store Accepts Payment Card Only</label>
+        <locationX>50</locationX>
+        <locationY>863</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ER_Store__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AT_Accepts_Payment__c</field>
+            <value>
+                <stringValue>Card only</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ER_Store__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updStoreAcceptsPaymentVoucherCard</name>
+        <label>Store Accepts Payment Voucher Card</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ER_Store__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AT_Accepts_Payment__c</field>
+            <value>
+                <stringValue>Voucher+Card</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ER_Store__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>updMIDSUbMIDAuthorization</targetReference>
+        </connector>
+        <filterFormula>{!$User.ER_BypassWF__c}=FALSE</filterFormula>
+        <object>ER_Acceptor__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>subflowACCOUNTCalculateMIDs</name>
+        <label>Account Calculate MIDs</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>decAcceptorStatus</targetReference>
+        </connector>
+        <flowName>ACCOUNT_CalculateMIDs</flowName>
+        <inputAssignments>
+            <name>varStoreID</name>
+            <value>
+                <elementReference>getStoreID.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

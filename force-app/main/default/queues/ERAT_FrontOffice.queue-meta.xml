@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Queue / Operations</name>
+    <queueMembers>
+        <roles>
+            <role>Accounting_Teamlead</role>
+            <role>Accounting_User</role>
+            <role>Back_Office_Teamlead</role>
+            <role>Back_Office_User</role>
+            <role>Customer_Service_Manager</role>
+            <role>Front_Office_Teamlead</role>
+            <role>Front_Office_User</role>
+            <role>Legal</role>
+            <role>Manager</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

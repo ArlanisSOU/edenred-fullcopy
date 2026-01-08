@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#CA1A1A</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>APM / Loop Verwaltung</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>APM Lightning</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-Feed</tabs>
+    <tabs>ER_Loop__c</tabs>
+    <tabs>ER_Store__c</tabs>
+    <tabs>ER_MCC__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>ER_Store_Authorization__c</tabs>
+    <tabs>ER_MCC_Authorization__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>APM_Lightning_UtilityBar</utilityBar>
+</CustomApplication>

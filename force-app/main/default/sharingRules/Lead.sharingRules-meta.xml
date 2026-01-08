@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>All_Users_Leads_Data_visible_by_Christophe_Ranc</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All Users Leads Data visible by Christophe Ranc</label>
+        <sharedTo>
+            <group>Christophe_Ranc</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Alle_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>All_Users_Leads_Data_visible_by_Mathieu_Gougibus</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All Users Leads Data visible by Mathieu Gougibus</label>
+        <sharedTo>
+            <group>Mathieu_Gougibus</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Alle_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Group_Merchants_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Group Merchants Sales</label>
+        <sharedTo>
+            <group>Affiliates_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Affiliates_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet / Werbebanner</fullName>
+        <default>false</default>
+        <label>Internet / Werbebanner</label>
+    </customValue>
+    <customValue>
+        <fullName>Medien (Presse, TV, Radio, Podcast)</fullName>
+        <default>false</default>
+        <label>Medien (Presse, TV, Radio, Podcast)</label>
+    </customValue>
+    <customValue>
+        <fullName>Soziale Medien (LinkedIn, Facebook, Instagram)</fullName>
+        <default>false</default>
+        <label>Soziale Medien (LinkedIn, Facebook, Instagram)</label>
+    </customValue>
+    <customValue>
+        <fullName>Steuerberatung</fullName>
+        <default>false</default>
+        <label>Steuerberatung</label>
+    </customValue>
+    <customValue>
+        <fullName>Suchmaschine (zB. Google, Bing, ...)</fullName>
+        <default>false</default>
+        <label>Suchmaschine (zB. Google, Bing, ...)</label>
+    </customValue>
+    <customValue>
+        <fullName>Weiterempfehlung (Freunde, Familie, Kolleg:innen)</fullName>
+        <default>false</default>
+        <label>Weiterempfehlung (Freunde, Familie, Kolleg:innen)</label>
+    </customValue>
+    <customValue>
+        <fullName>Suchmaschine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Suchmaschine</label>
+    </customValue>
+    <description>How did you hear about us? (first contact)</description>
+    <masterLabel>Initial Contact Information</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

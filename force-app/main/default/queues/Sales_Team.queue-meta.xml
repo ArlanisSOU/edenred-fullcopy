@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Sales Team</name>
+    <queueMembers>
+        <roles>
+            <role>Field_Sales</role>
+            <role>Key_Account_Manager</role>
+            <role>Sales_Manager</role>
+            <role>Telesales</role>
+        </roles>
+        <users>
+            <user>martin.thor@edenred.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>
