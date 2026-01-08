@@ -1,0 +1,50 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+# Salesforce cache
+**/.localdevserver/**
+**/.sfdx/**
+**/.sf/**
+
+# Logs
+logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Salesforce Project Specific
+**/node_modules/**
+**/bower_components/**
+
+# Apex PMD
+.pmdCache
+
+# Profiles - Uncomment the next line if you want to ignore profiles
+# **/profiles/**
+
+# Package Directories
+packages/
+
+# User-specific settings
+.vscode/settings.json
+.idea/
+
+# Build files
+**/target/**
+**/dist/**
